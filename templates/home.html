@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %} Yaqeen | A blog for pythonists and Django developers {% endblock title %}
+
+
+{% block content %}
+    <br/>
+    <div class="jumbotron">
+        <h1 class="display-4">Assalamu alaykum!</h1>
+        <p class="lead">Welcome to Shavkatbek Khoshimov's personal blog.</p>
+        <hr class="my-4">
+        <p>There you will be informed about the latest news about programming and programmers.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'blog:post_list' %}" role="button">View posts</a>
+        </p>
+    </div>
+    
+{% endblock content %}
